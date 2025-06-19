@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Andrew's Portfolio - A showcase of my work and skills in the tading industry."
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- scripts -->
+    <script src="script.js" defer></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Home : Jason Andrew</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" src="/img/Logo.svg" alt="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#home">Home</a></li>
+          <li><a class="main-nav-link" href="#about">What I Do</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="">Subscribe to Newsletter</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero" id="home">
+        <div class="container">
+          <div class="hero">
+            <div class="hero-text-box">
+              <h1 class="heading-primary">Be Who You Want To Be</h1>
+              <p>Design a life that inspires you. Be Always Free.</p>
+              <div class="dropdown" id="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()">
+                  Connect with Jason <span class="arrow rotate">&rsaquo;</span>
+                </button>
+                <div class="dropdown-content">
+                  <a
+                    href="https://t.me/JasonGRST"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="dropdown-link"
+                  >
+                    <span>Telegram</span>
+                    <img src="/img/Socials/Teleram-img.png" alt="Telegram" />
+                  </a>
+                  <a
+                    href="https://youtube.com/@tradewithjason2024?si=lV94U10J16mj9A3g"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="dropdown-link"
+                  >
+                    <span>YouTube</span>
+                    <img src="/img/Socials/youtube-img.png" alt="YouTube" />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@trademrandrew"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="dropdown-link"
+                  >
+                    <span>Tiktok</span>
+                    <img src="/img/Socials/tiktok-img.png" alt="Tiktok" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-mentorship">
+        <div class="container">
+          <div class="mentorship-box grid grid--3-cols">
+            <div class="box-1 box">
+              <div class="mentorship-img">
+                <img src="/img/mic-img.png" class="box-img" alt="microphone" />
+              </div>
+              <h2 class="heading-secondary">Podcast</h2>
+              <p class="sub-heading">
+                Number one podcast for financial empowerment and wealth creation
+              </p>
+              <p class="paragraph">
+                Insights and strategies that allow you design your life and be
+                who you want to be.
+              </p>
+            </div>
+            <div class="box-2 box">
+              <div class="mentorship-img">
+                <img
+                  src="/img/pyramind-img.png"
+                  class="box-img"
+                  alt="pyramid"
+                />
+              </div>
+              <h2 class="heading-secondary">Build Wealth</h2>
+              <p class="sub-heading">
+                Comprehensive, complete and practical programs for financial
+                freedom
+              </p>
+              <p class="paragraph">
+                Renowned, life changing programs and platforms to empower your
+                life.
+              </p>
+            </div>
+            <div class="box-3 box">
+              <div class="mentorship-img">
+                <img
+                  src="/img/candlestick-img.png"
+                  class="box-img"
+                  alt="candle sticks"
+                />
+              </div>
+              <h2 class="heading-secondary">Trading</h2>
+              <p class="sub-heading">
+                State of the art trading education platform
+              </p>
+              <p class="paragraph">
+                Innovative and immersive trader training platform as featured in
+                forbes magazine.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-wealth-profile"
+        data-aos="fade-up"
+        data-aos-duration="5000"
+      >
+        <div class="wealth-profile">
+          <div class="wealth-profile-text-box">
+            <h3 class="heading-tertiary">Discover Your Wealth Profile</h3>
+            <p class="paragraph">
+              Take the free Wealth Profile Scorecard to discover your Wealth
+              Profile in less than 5 minutes!
+            </p>
+          </div>
+          <div class="wealth-profile-btn-box">
+            <a
+              href="https://wealthdiscoverytiersoffreedom.scoreapp.com/"
+              class="discover-btn"
+              target="_blank"
+              >Discover Now</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about" id="about">
+        <div class="container">
+          <div class="about">
+            <div
+              class="about-text-box"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
+              <h2 class="heading-secondary">What I Do</h2>
+              <p class="paragraph">
+                My name is JASON ANDREW. I've worked as a professional Forex and
+                Futures trader And Binary Options for over 16 years, both
+                privately and in major firms across the USA.
+              </p>
+              <p class="paragraph">
+                When I started I was a single dad at age 19 in 2009. Today I
+                have been blessed to help over 15K students, we have created 73
+                millionaires. Many students find success with us. We have put on
+                over 25 live events. I will continue to do this because it’s
+                much bigger than me, it’s about helping YOU and there have been
+                over a dozen people who have worked with me and started their
+                own things teaching others and the cycle repeats.Even though
+                ways in teaching may differ and no one way is ever 100%, it’s a
+                beautiful thing to share knowledge. I wish you all success and
+                happiness.
+              </p>
+              <p class="paragraph">
+                Most online trading courses encourage you to start risking real
+                money from day one, but institutional training takes a different
+                approach, professionals aren’t trusted with live funds until
+                they’ve proven consistent profitability, often after a year or
+                more. After recognizing this gap, I decided to create my own
+                course, built on real industry standards. Drawing from years of
+                experience, I’ve designed a program that teaches trading the
+                right way, from foundational concepts to advanced strategies, so
+                that anyone, not just those in firms, can access a proper
+                trading education.
+              </p>
+            </div>
+            <div class="about-img-box">
+              <img src="/img/about.jpeg" alt="Jason Andrew and his setup" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="container">
+          <div class="sections-header">
+            <h2 class="heading-secondary">Testimonials</h2>
+          </div>
+          <div class="carousel" id="carousel">
+            <div class="slides" id="slides">
+              <div class="slide">
+                <img
+                  src="./img/Testimonials/Testimonial-1.png"
+                  alt="Testimonials"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/Testimonials/Testimonial-2.png"
+                  alt="Testimonials"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/Testimonials/Testimonial-3.png"
+                  alt="Testimonials"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/Testimonials/Testimonial-4.png"
+                  alt="Testimonials"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/Testimonials/Testimonial-5.png"
+                  alt="Testimonials"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/Testimonials/Testimonial-6.png"
+                  alt="Testimonials"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/Testimonials/Testimonial-7.png"
+                  alt="Testimonials"
+                />
+              </div>
+            </div>
+            <div class="controls">
+              <button class="control-btn" id="prev">&#10094;</button>
+              <button class="control-btn" id="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <div class="container">
+        <div class="footer">
+          <a href="#">
+            <img class="logo" src="/img/Logo.svg" alt="logo" />
+          </a>
+
+          <div class="copyright">
+            <p class="copyright-text">© Copyright 2023 Andrew Education</p>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://t.me/JasonGRST"
+              target="_blank"
+              class="social-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com/@tradewithjason2024?si=lV94U10J16mj9A3g"
+              target="_blank"
+              class="social-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.tiktok.com/@trademrandrew"
+              target="_blank"
+              class="social-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
