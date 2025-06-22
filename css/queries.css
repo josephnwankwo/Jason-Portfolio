@@ -110,7 +110,7 @@
   .wealth-profile {
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 3rem;
+    padding: 3rem;
 
     p {
       width: 100%;
@@ -147,6 +147,10 @@
       display: block;
       max-width: 100%;
     }
+  }
+
+  .section-about {
+    padding: 9.6rem 0 6.4rem 0;
   }
 
   .about-img-box {
