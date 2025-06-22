@@ -1,3 +1,60 @@
+/* rem and em do not depend on html font size in media queries!
+ instead, 1rem = 1em = 16px */
+
+/*********************************/
+/* BELOW 1344px (smaller desktops) */
+/*********************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 5rem;
+  }
+}
+
+/*********************************/
+/* BELOW 1200px (Landscape tablets) */
+/*********************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 4.4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
 /*********************************/
 /* BELOW 944px (Tablets) */
 /*********************************/
@@ -6,9 +63,13 @@
     font-size: 50%;
   }
 
+  .logo {
+    height: 3rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
-    padding: 0 8rem;
+    padding: 2.4rem 8rem;
     gap: 6.4rem;
   }
 
@@ -19,43 +80,82 @@
 
   .hero-img {
     width: 60%;
+    height: auto;
+    display: block;
+    max-width: 100%;
   }
 
-  .delivered-meals {
-    justify-content: center;
-    margin-top: 3.2rem;
+  .heading-primary {
+    font-size: 5.2rem;
   }
 
-  .logos img {
-    height: 2.4rem;
+  .heading-secondary {
+    text-align: center;
   }
 
-  .step-number {
-    font-size: 7.4rem;
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .meal-content {
-    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  .section-wealth-profile {
+    max-width: 100rem;
+    margin: 0 auto;
+    height: auto;
+    position: static; /* resets it to default */
+    top: 0; /* removes the 120px offset */
+    margin-bottom: 6.4rem; /* adds space below the section */
+    text-align: center;
   }
 
-  .section-testimonials {
-    grid-template-columns: 1fr;
+  .wealth-profile {
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 10rem;
+
+    p {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
   }
 
-  .gallery {
-    grid-template-columns: repeat(6, 1fr);
+  .discover-btn:link,
+  .discover-btn:visited {
+    font-size: 1.6rem;
+    padding: 2.5rem 4rem;
+    text-align: center;
   }
 
-  .cta {
-    grid-template-columns: 3fr 2fr;
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6.4rem;
+    text-align: center;
   }
 
-  .cta-form {
-    grid-template-columns: 1fr;
+  .section-mentorship {
+    text-align: center;
   }
 
-  .btn--form {
-    margin: 1.2rem;
+  .mentorship-box {
+    gap: 4.8rem;
+  }
+
+  .mentorship-img {
+    .box-img {
+      width: 60%;
+      height: auto;
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .about-img-box {
+    img {
+      width: 60%;
+      height: auto;
+      display: block;
+      max-width: 100%;
+    }
   }
 
   /* MOBILE NAVIGATION */
@@ -91,6 +191,8 @@
 
     /* 3) hide it from screen readers */
     visibility: hidden;
+
+    z-index: 9998;
   }
 
   .nav-open .main-nav {
@@ -116,5 +218,42 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+
+/*********************************/
+/* BELOW 704px (smaller Tablets) */
+/*********************************/
+@media (max-width: 44em) {
+  .footer {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+/*********************************/
+/* BELOW 544px (Phones) */
+/*********************************/
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
   }
 }

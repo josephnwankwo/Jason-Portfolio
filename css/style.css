@@ -5,7 +5,7 @@
 .header {
   /* because we want it to be sticky later */
   height: 10rem;
-  padding: 0 12rem;
+  padding: 0 4.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,6 @@
   border: none;
   background: none;
   cursor: pointer;
-
   display: none;
 }
 
@@ -124,22 +123,21 @@
 }
 
 .hero-img-box {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.hero-img-box img {
-  width: 100%;
+.hero-img {
+ width: 100%;
   height: auto;
   object-fit: cover;
-  display: block;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
 
   img {
     width: 3rem;
@@ -186,7 +184,7 @@
   top: 100%;
   margin-top: 5px;
   background-color: white;
-  min-width: 16rem;
+  width: 100%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
@@ -198,11 +196,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   transition: all 0.3s ease;
 
   span {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -246,10 +244,14 @@
 }
 
 .mentorship-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
   .box-img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -318,7 +320,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: stretch;
-  gap: 12.8rem;
+  gap: 12rem;
   color: #fff;
 
   h2 {
@@ -331,12 +333,13 @@
   }
 
   .about-img-box {
-    overflow: hidden;
-    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: cover;
       transition: transform 0.3s ease;
       cursor: pointer;
