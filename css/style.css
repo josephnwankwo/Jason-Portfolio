@@ -236,6 +236,8 @@
 }
 
 .box {
+  cursor: pointer;
+  background-color: blue;
 }
 
 .box:hover p {
